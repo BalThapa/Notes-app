@@ -5,24 +5,24 @@ const Display = (props) => {
     return (
         <div className='notepad'>
             <div className='note'>
-                <label for="firstname" id='Notefirstname'>First Name:</label>
-               <p class= "text"></p>
+                <label>First Name:</label>
+               <p><span>{props.firstname}</span></p>
             </div>
             <div className='note'>
-                <label for="lastname" id='Notelastname'>Last Name:</label>
-                <p class= "text"></p>
+                <label>Last Name:</label>
+                <p><span>{props.lastname}</span></p>
             </div>
             <div className='note'>
-                <label for="contact" id='Notecontact'>Phone:</label>
-                <p class= "text"></p>
+                <label>Phone:</label>
+                <p><span>{props.phone}</span></p>
             </div>
             <div className='note'>
-                <label for="role" id='Noterole'>Role:</label>
-                <p class= "text"></p>
+                <label>Role:</label>
+                <p><span>{props.role}</span></p>
             </div>
             <div className='note'>
-                <label for="message" id='Notemessage'>Message:</label>
-                <p class= "text"></p>
+                <label>Message:</label>
+                <p><span>{props.message}</span></p>
             </div>
         </div>
     );

@@ -1,28 +1,29 @@
 import React from 'react';
 
-const Modal = () => {
+const Modal = (props) => {
     return (
-        <div className='modal'>
+        
+        <div className="modal" >
             <h2>This is your note</h2>
              <div className='view'>
-                <label for="firstname" id='Notefirstname'>First Name:</label>
-                <p></p> 
+                <label>First Name:</label>
+                <p><span>{props.firstname}</span></p> 
             </div>
             <div className='view'>
-                <label for="lastname" id='Notelastname'>Last Name:</label>
-                <p></p>    
+                <label>Last Name:</label>
+                <p><span>{props.lastname}</span></p>    
             </div>
             <div className='view'>
-                <label for="contact" id='Notecontact'>Phone:</label>
-                <p></p> 
+                <label>Phone:</label>
+                <p><span>{props.phone}</span></p> 
             </div>
             <div className='view'>
-                <label for="role" id='Noterole'>Role:</label>
-                <p></p> 
+                <label>Role:</label>
+                <p><span>{props.role}</span></p> 
             </div>
             <div className='view'>
                 <label for="message" id='Notemessage'>Message:</label>
-                <p></p> 
+                <p><span>{props.message}</span></p> 
             </div>
 
             <button className='sure'>YES, I AM SURE.</button>
