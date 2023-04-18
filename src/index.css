@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: sandybrown;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +12,108 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  display:flex;
+  flex-direction: row;
+
+}
+ .form{
+  width: 400px;
+  font-weight: bold;
+ }
+
+form div{
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  
+}
+
+.notepad {
+  margin: 4rem;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  padding: 3rem;
+  box-shadow: 4px 4px 0 #018dd3;
+  background-repeat: space no-repeat;
+  background-position: center top, center 6px, center 6px;
+  background-image: linear-gradient(90deg, #fff 12px, 0, #00486B 15px, 0 ,#1373A9 20px, 0,#fff 100%),radial-gradient(circle closest-side,rgba(255,255,255,0) 88%,#fff 100%),radial-gradient(circle at 22px 8px,#1373A9 40%,#00486B 40%,#00486B 100%);
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 21'%3E%3Cpath d='M20 0h-7v6.9a7.5 7.5 0 107 0V0z' fill='%231373A9'/%3E%3Cpath d='M13 0h3v6.9a7.5 7.5 0 002 14 7.5 7.5 0 01-9-7.4c0-2.9 1.6-5.4 4-6.6V0z' fill='%2300486B'/%3E%3C/svg%3E");
+    background-size: 2em 1.3125em;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#send {
+ padding: 0.5rem;
+ padding-left: 3rem;
+ padding-right: 3rem;
+ margin-left: 3rem;
+ background-color: green;
+ border: none;
+ border-radius: 3px;
+ font-weight: bold;
+ font-size: large;
+}
+
+.sure {
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: green;
+  border: none;
+  margin: 1px;
+  border-radius: 3px;
+  font-weight: bolder;
+  font-size: large;
+}
+ .modal{
+  background-color: aqua;
+  width: 600px;
+  padding: 2rem;
+  font-weight: bold;
+ }
+
+ .notepad p{
+  border: dotted;
+  border-color: rgb(59, 51, 51);
+  border-width: thin;
+  width: 500px;
+  
+ }
+
+ p{
+  font-style: italic;
+ }
+
+  .note {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-weight: bold;
+  }
+
+  .view {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input, .role {
+    height: 2rem;
+    margin-top: 0.5rem;
+  }
+  textarea{
+    margin-top: 0.5rem;
+  }
+
+
+
+
+
+
+

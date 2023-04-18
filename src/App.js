@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Form from "./components/form";
+import Display from "./components/display";
+import Modal from "./components/modal";
+
+class App extends Component {
+  state = {
+    modal: false,
+  };
+
+  modalHandler = (e) => {
+    e.preventDefault();
+    this.setState({
+      modal: !this.state.modal,
+    });
+  };
+
+  render() {
+    return (
+      <div className="app">
+        <div>
+          <Form submit={this.modalHandler} />
+        </div>
+        <div>
+          <Display />
+        </div>
+        {this.state.modal && (
+          <div>
+            <Modal />
+          </div>
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;
