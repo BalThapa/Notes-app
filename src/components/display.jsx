@@ -4,25 +4,20 @@ import "../index.css";
 const Display = (props) => {
     return (
         <div className='notepad'>
-            <div className='note'>
-                <label>FirstName:</label>
-               <p><span>{props.firstname}</span></p>
+            <div className='note'>             
+               <p>FirstName:<span type="text-box">{props.firstname}</span></p>
             </div>
             <div className='note'>
-                <label>LastName:</label>
-                <p><span>{props.lastname}</span></p>
+                <p>LastName:<span>{props.lastname}</span></p>
             </div>
             <div className='note'>
-                <label>Phone:</label>
-                <p><span>{props.phone}</span></p>
+                <p>Phone:<span>{props.phone}</span></p>
             </div>
             <div className='note'>
-                <label>Role:</label>
-                <p><span>{props.role}</span></p>
+                <p>Role:<span>{props.role}</span></p>
             </div>
             <div className='note'>
-                <label>Message:</label>
-                <p><span>{props.message}</span></p>
+                <p>Message:<span>{props.message}</span></p>
             </div>
         </div>
     );

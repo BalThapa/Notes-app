@@ -23,9 +23,10 @@ class App extends Component {
     });
   };
 
-  changeHandler = (e) => {
+  changeHandler = (e, name) => {
+    name = e.target.name;
     this.setState({
-      [e.target.name]: e.target.value,
+      note: { ...this.state.note, [name]: e.target.value },
     });
   };
 
@@ -35,7 +36,7 @@ class App extends Component {
         <Form submit={this.modalHandler} changeHandler={this.changeHandler} />
 
         <Display
-          {...this.note}
+          {...this.state.note}
           /* firstname={this.state.firstname}
           lastname={this.state.lastname}
           phone={this.state.phone}
@@ -45,8 +46,8 @@ class App extends Component {
 
         {this.state.displayModal && (
           <Modal
+            {...this.state.note}
             click={this.modalHandler}
-            {...this.note}
             /*firstname={this.state.firstname}
             lastname={this.state.lastname}
             phone={this.state.phone}
