@@ -1,8 +1,9 @@
 import React from 'react';
+import "../index.css"
 
 const Modal = (props) => {
     return (
-        
+        <div className='overlay'>
         <div className="modal" >
             <h2>This is your note</h2>
              <div className='view'>
@@ -26,9 +27,9 @@ const Modal = (props) => {
                 <p><span>{props.message}</span></p> 
             </div>
 
-            <button className='sure'>YES, I AM SURE.</button>
-            <button className='sure'>NO, DON'T POST IT.</button>
-        </div>
+            <button className='sure' onClick={props.click}>YES, I AM SURE.</button>
+            <button className='sure'onClick={props.click}>NO, DON'T POST IT.</button>
+        </div></div>
     );
 };
 

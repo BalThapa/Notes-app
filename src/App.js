@@ -6,29 +6,53 @@ import Modal from "./components/modal";
 
 class App extends Component {
   state = {
-    modal: false,
+    displayModal: false,
+    note: {
+      firstname: " ",
+      lastname: " ",
+      phone: " ",
+      role: " ",
+      message: " ",
+    },
   };
 
   modalHandler = (e) => {
     e.preventDefault();
     this.setState({
-      modal: !this.state.modal,
+      displayModal: !this.state.displayModal,
+    });
+  };
+
+  changeHandler = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
     });
   };
 
   render() {
     return (
       <div className="app">
-        <div>
-          <Form submit={this.modalHandler} />
-        </div>
-        <div>
-          <Display />
-        </div>
-        {this.state.modal && (
-          <div>
-            <Modal />
-          </div>
+        <Form submit={this.modalHandler} changeHandler={this.changeHandler} />
+
+        <Display
+          {...this.note}
+          /* firstname={this.state.firstname}
+          lastname={this.state.lastname}
+          phone={this.state.phone}
+          role={this.state.role}
+          message={this.state.message}*/
+        />
+
+        {this.state.displayModal && (
+          <Modal
+            click={this.modalHandler}
+            {...this.note}
+            /*firstname={this.state.firstname}
+            lastname={this.state.lastname}
+            phone={this.state.phone}
+            role={this.state.role}
+            message={this.state.message}*/
+          />
         )}
       </div>
     );

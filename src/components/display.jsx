@@ -5,11 +5,11 @@ const Display = (props) => {
     return (
         <div className='notepad'>
             <div className='note'>
-                <label>First Name:</label>
+                <label>FirstName:</label>
                <p><span>{props.firstname}</span></p>
             </div>
             <div className='note'>
-                <label>Last Name:</label>
+                <label>LastName:</label>
                 <p><span>{props.lastname}</span></p>
             </div>
             <div className='note'>
