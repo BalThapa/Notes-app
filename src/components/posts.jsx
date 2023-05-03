@@ -5,7 +5,12 @@ const Posts = (props) => {
         <div>
         <h2>My Notes:</h2>
           <ul>
-            {props.data.map(note => <li key={note.id}><p>Firstname:</p>{note.firstname},<p>Lastname:</p>{note.lastname},<p>Phone:</p>{note.phone} ,<p>Role:</p>{note.role} ,<p>Message:</p>{note.message}</li>
+            {props.data.map(note => <li key={note.id}>
+                <p>Firstname:<span>{note.firstname}</span></p>
+                <p>Lastname:<span>{note.lastname}</span></p>
+                 <p>Phone:<span>{note.phone}</span></p> 
+                 <p>Role:<span>{note.role}</span></p> 
+                 <p>Message:<span>{note.message}</span></p></li>
             )}
             </ul> 
             

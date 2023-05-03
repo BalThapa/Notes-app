@@ -58,6 +58,7 @@ class App extends Component {
         role: " ",
         message: " ",
       },
+      data: [],
     });
     axios
       .get("http://localhost:4001/posts/")
@@ -66,32 +67,35 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
-        <Form submit={this.modalHandler} changeHandler={this.changeHandler} />
+      <div>
+        <div className="app">
+          <Form submit={this.modalHandler} changeHandler={this.changeHandler} />
 
-        <Display
-          {...this.state.note}
-          /* firstname={this.state.firstname}
+          <Display
+            {...this.state.note}
+            /* firstname={this.state.firstname}
           lastname={this.state.lastname}
           phone={this.state.phone}
           role={this.state.role}
           message={this.state.message}*/
-        />
+          />
 
-        {this.state.displayModal && (
-          <Modal
-            {...this.state.note}
-            click={this.modalHandler}
-            send={this.postHandler}
-            /*firstname={this.state.firstname}
+          {this.state.displayModal && (
+            <Modal
+              {...this.state.note}
+              click={this.modalHandler}
+              send={this.postHandler}
+              /*firstname={this.state.firstname}
             lastname={this.state.lastname}
             phone={this.state.phone}
             role={this.state.role}
             message={this.state.message}*/
-          />
-        )}
-
-        <Posts data={this.state.data} />
+            />
+          )}
+        </div>
+        <div className="post">
+          <Posts data={this.state.data} />
+        </div>
       </div>
     );
   }
