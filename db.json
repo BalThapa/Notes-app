@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstname": "Jack",
+      "lastname": "Reacher",
+      "phone": 98035534,
+      "role": "student",
+      "message": "Some important message"
+    },
+    {
+      "id": 2,
+      "firstname": "Jackline",
+      "lastname": "Fernandez",
+      "phone": 98035534,
+      "role": "student",
+      "message": "Some important message"
+    },
+    {
+      "id": 3,
+      "firstname": "Lara",
+      "lastname": "Croft",
+      "phone": 98035534,
+      "role": "student",
+      "message": "Some important message"
+    },
+    {
+      "firstname": "jgjcncncn",
+      "lastname": "River",
+      "phone": "65436",
+      "role": "student",
+      "message": "jytdcnhn",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
