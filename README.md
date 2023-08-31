@@ -1,3 +1,5 @@
+[![Note-App](https://github.com/BalThapa/Notes-app/actions/workflows/main.yml/badge.svg)](https://github.com/BalThapa/Notes-app/actions/workflows/main.yml)
+
 ## Available Scripts
 
 In the project directory, you can run:
