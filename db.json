@@ -23,17 +23,14 @@
       "phone": 98035534,
       "role": "student",
       "message": "Some important message"
-    }
-   
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "firstname": "DSFADSF",
+      "lastname": "SDAFASDF",
+      "phone": "5634",
+      "role": "teacher",
+      "message": "AFSFDS",
+      "id": 4
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -21,11 +21,11 @@ class App extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:4001/posts/")
+      .get("http://localhost:5001/posts/")
       .then((res) => this.setState({ data: res.data }));
   }
 
-  /*fetch("http://localhost:4001/posts")
+  /*fetch("http://localhost:5001/posts")
       .then((res) => res.json())
       .then((res) => this.setState({ data: res }));
   }*/
@@ -46,11 +46,11 @@ class App extends Component {
 
   postHandler = () => {
     axios
-      .post("http://localhost:4001/posts/", this.state.note)
+      .post("http://localhost:5001/posts/", this.state.note)
       .then((res) => console.log("res", res))
       .catch((error) => console.log("error", error));
     this.setState({
-      displayModal: !this.state.showModal,
+      displayModal: !this.state.displayModal,
       note: {
         firstname: " ",
         lastname: " ",
@@ -61,7 +61,7 @@ class App extends Component {
       data: [],
     });
     axios
-      .get("http://localhost:4001/posts/")
+      .get("http://localhost:5001/posts/")
       .then((res) => this.setState({ data: res.data }));
   };
 
