@@ -4,6 +4,7 @@ import "../index.css";
 const Display = (props) => {
     return (
         <div className='notepad'>
+            <h2>Notepad</h2>
             <div className='note'>             
                <p>FirstName:<span type="text-box">{props.firstname}</span></p>
             </div>
